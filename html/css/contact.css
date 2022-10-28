@@ -1,0 +1,186 @@
+body {
+  font-family: Roboto;
+  background-color: rgb(147, 200, 216);
+  background-image: url('img/Background2.jpg');
+  color: #white;
+}
+main{
+  background-image: url('img/Background2.jpg');
+}
+.header {
+  background: #81685e;
+  position: relative;
+  /*pour que la navbar aille bien en haut*/
+  top: 0px;
+  /*pour que la navbar se colle en haut */
+  height: 220px;
+  /*pour que la navbar descende un peu*/
+  width: 100%;
+  /*pour que la navbar prenne toute la largeur*/
+  display: flex;
+  /*pour que tout s'aligne*/
+  align-items: center;
+  /*pour que tout s'aligne, au centre) */
+}
+
+.Logo {
+  width: 200px;
+  height: 200px;
+}
+
+.icons {
+  position: absolute;
+  right: 0;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.icons li {
+  margin: 10px;
+  /*écart entre les catégories*/
+  overflow: hidden;
+  /*cacher le 2e élément qui sert au Responsive*/
+}
+
+.icons a {
+  text-decoration: none;
+  /*enlever le surlignage et tout de l'hyperlien*/
+  /*position: relative; permet de pas voir les catégories quand l'écran se rétrécit*/
+  display: block;
+}
+
+.icons .categorie {
+  color: #white;
+  padding: 12px;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.3s;
+  font-size: 25px;
+  /*taille de l'écriture (catégories)*/
+  font-weight: 300;
+}
+
+.icons .categorie:hover {
+  border-bottom: 3px solid black;
+  color: black;
+}
+
+/*--------------fin du header----------*/
+
+
+    
+    
+.contactez-nous {
+  width: 700px;
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 10px;
+  background: white;
+  margin: auto;
+} 
+
+.contactez-nous > h1 {
+  font-weight: 500;
+}
+
+.contactez-nous > p {
+  font-weight: 300;
+}
+
+form div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 83px;
+  margin-top: 25px;
+}
+
+form div > label {
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+form div > input, form div > select, form div > textarea {
+  background: #81685e;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Montserrat, "sans-serif";
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
+}
+
+form div > input, form div > select {
+  height: 50px;
+  padding-left: 10px;
+}
+
+form div > select {
+  appearance: none;
+  background-size: 15px;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIxMy4zMzMgMjEzLjMzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjAsNTMuMzMzIDEwNi42NjcsMTYwIDIxMy4zMzMsNTMuMzMzICAgIiBmaWxsPSIjMzAzMDMwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BvbHlnb24+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==');
+  background-position: right 10px top 50%;
+  background-repeat: no-repeat;
+}
+
+form div > textarea {
+  height: 195px;
+  padding: 15px 0px 0px 10px;
+}
+
+form div > input::placeholder, form div > textarea::placeholder {
+  color: white;
+}
+
+form div > select:invalid {
+  color: white;
+}
+
+form div > select option {
+  background: white;
+  color: #303030;
+}
+
+form div:last-child {
+  align-items:center;
+  margin-top: 20px;
+}
+
+form button {
+  width: 450px;
+  max-width: 500px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 28px;
+  background: white;
+  border: rgba(48, 48, 48, 0.5) solid 1px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+  color: #303030;
+}
+
+
+    footer {
+        border-top: 2px solid #000000;
+        padding-bottom: 15px;
+        background-color: #81685e;
+        
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    #Mentions,
+    #CGV,
+    #Contact,
+    #Reseaux {
+        font-size:25px;
+        color: white;
+        font-family: Euphemia;
+    }
+    a{
+        
+        color: white;
+    }

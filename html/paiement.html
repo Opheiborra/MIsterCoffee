@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/paiement.css">
+    <script src="https://kit.fontawesome.com/8a1152e251.js" crossorigin="anonymous"></script>
+    <!-- permet d'importer des icones -->
+    <title>Mister Coffee</title>
+</head>
+
+<body>
+    <header id="header" class="header">
+
+        <a href="file:///home/step/Documents/Mister%20Caf%C3%A9/mister_cafe_maison/html/index.html"><img
+                src="./img/Logo.png" class="Logo" /></a>
+
+        <!-- Catégories de la navbar -->
+        <ol class="icons">
+
+            <li>
+                <a href="file:///home/step/Documents/Mister%20Caf%C3%A9/mister_cafe_maison/html/famille.html"
+                    class="categorie"> <i class="fa-solid fa-mug-hot fa-3x" style="color:white"></i></a>
+            </li>
+
+            <li>
+                <a href="#" class="categorie"> <i class="fa-solid fa-user fa-3x" style="color:white"></i> </a>
+            </li>
+
+            <li>
+                <a href="file:///home/step/Documents/Mister%20Caf%C3%A9/mister_cafe_maison/html/panier.html"
+                    class="categorie"><i class="fa-solid fa-basket-shopping fa-3x" style="color:white"
+                        class="categorie"></i></a>
+            </li>
+
+        </ol>
+
+    </header>
+
+    <div class="checkout-panel">
+        <div class="panel-body">
+            <h2 class="title">Valider la Commande</h2>
+
+            <!-- <div class="progress-bar"> 
+                <div class="step active"></div>
+                <div class="step active"></div>
+                <div class="step"></div>
+                <div class="step"></div>
+            </div> -->
+
+            <div class="payment-method">
+                <label for="card" class="method card">
+                    <div class="card-logos">
+                        <img src="img/visa_logo.png" class="logo_paiement" />
+                        <img src="img/mastercard_logo.png" class="logo_paiement" />
+                    </div>
+
+                    <div class="radio-input">
+                        <input id="card" type="radio" name="payment">
+                        Régler 37€ par Carte Bancaire
+                    </div>
+                </label>
+
+                <label for="3x" class="method x3">
+                    <img src="img/klarna_logo.png" class="logo_paiement" />
+                    <div class="radio-input">
+                        <input id="klarna" type="radio" name="payment">
+                        Régler 37€ en trois fois
+                    </div>
+                </label>
+
+                <label for="paypal" class="method paypal">
+                    <img src="img/paypal_logo.png" class="logo_paiement" />
+                    <div class="radio-input">
+                        <input id="paypal" type="radio" name="payment">
+                        Régler 37€ par Paypal
+                    </div>
+                </label>
+
+                <label for="Apple" class="method apple">
+                    <img src="img/apple_logo.png" class="logo_paiement" />
+                    <div class="radio-input">
+                        <input id="apple" type="radio" name="payment">
+                        Régler 37€ par ApplePie
+                    </div>
+                </label>
+            </div>
+
+
+            <div class="input-fields">
+                <div class="column-1">
+                    <label for="cardholder">Nom</label>
+                    <input type="text" id="cardholder" />
+
+                    <div class="small-inputs">
+                        <div>
+                            <label for="date">Date d'Expiration</label>
+                            <input type="text" id="date" placeholder="MM / YY" />
+                        </div>
+
+                        <div>
+                            <label for="verification">CVV / CVC *</label>
+                            <input type="password" id="verification" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="column-2">
+                    <label for="cardnumber">Numéro de carte</label>
+                    <input type="password" id="cardnumber" />
+
+                    <span class="info">* CVV or CVC : cryptogramme au dos de la carte</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel-footer">
+            <a href="file:///home/step/Documents/Mister%20Caf%C3%A9/mister_cafe_maison/html/panier.html"><button class="btn back-btn">Précedent</button></a>
+            <a href="file:///home/step/Documents/Mister%20Caf%C3%A9/mister_cafe_maison/html/end.html"><button class="btn next-btn">Suivant</button></a>
+        </div>
+    </div>
+
+
+
+    <footer>
+
+        <h6 id="Mentions"><a href="#">
+                Mentions Légales </a>
+
+        </h6>
+
+        <h6 id="CGV"><a href="#">
+                Conditions Générales de Ventes</a>
+        </h6>
+
+        <a href="file:///home/step/Documents/Mister%20Caf%C3%A9/mister_cafe_maison/html/contact.html">
+            <h6 id="Contact"> Contactez-nous
+        </a>
+        </h6>
+
+        <h6 id="Reseaux"><a href="#">
+                <i class="fa fa-twitter fa-4x"></i>
+                <i class="fa-brands fa-instagram fa-4x"></i>
+                <i class="fa-brands fa-facebook-f fa-4x"></i>
+
+            </a>
+        </h6>
+
+
+    </footer>
+
+</body>
+
+</html>

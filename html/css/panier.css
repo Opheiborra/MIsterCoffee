@@ -1,0 +1,199 @@
+body {
+    font-family: Roboto;
+    background-color: rgb(147, 200, 216);
+    background-image: url('img/Background2.jpg');
+    color: #white;
+}
+
+main {
+    background-image: url('img/Background2.jpg');
+}
+
+.header {
+    background: #81685e;
+    position: relative;
+    /*pour que la navbar aille bien en haut*/
+    top: 0px;
+    /*pour que la navbar se colle en haut */
+    height: 220px;
+    /*pour que la navbar descende un peu*/
+    width: 100%;
+    /*pour que la navbar prenne toute la largeur*/
+    display: flex;
+    /*pour que tout s'aligne*/
+    align-items: center;
+    /*pour que tout s'aligne, au centre) */
+}
+
+.Logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.icons {
+    position: absolute;
+    right: 0;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.icons li {
+    margin: 10px;
+    /*écart entre les catégories*/
+    overflow: hidden;
+    /*cacher le 2e élément qui sert au Responsive*/
+}
+
+.icons a {
+    text-decoration: none;
+    /*enlever le surlignage et tout de l'hyperlien*/
+    /*position: relative; permet de pas voir les catégories quand l'écran se rétrécit*/
+    display: block;
+}
+
+.icons .categorie {
+    color: #white;
+    padding: 12px;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s;
+    font-size: 25px;
+    /*taille de l'écriture (catégories)*/
+    font-weight: 300;
+}
+
+.icons .categorie:hover {
+    border-bottom: 3px solid black;
+    color: black;
+}
+
+/*--------------fin du header----------*/
+
+h1 {
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b89383;
+    opacity: 0, 5;
+    width: 1000px;
+    height: 100px;
+    margin: auto;
+}
+
+.boxImage1,
+.boxImage2,
+.boxImage3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+ input {             /*il s'agit des qté*/
+    font-size: 25px;
+    color: #777;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border-bottom: 2px solid #ccc;
+    padding: 5px;
+    padding-left: 10px;
+    background-color: #white;
+}
+
+
+h2 {
+    font-size: 25px;
+    color: white;
+    font-family: Euphemia;
+}
+
+.miniatureCommande {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.btn {
+    font-size: 16px;
+    width: 163px;
+    height: 48px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 23px;
+
+    position: absolute;
+    right: 0;
+    bottom: 100;
+}
+button {
+
+    width: 450px;
+    max-width: 500px;
+    font-weight: 700;
+    font-size: 28px;
+    background: #c4ada4;
+    border: rgba(48, 48, 48, 0.5) solid 1px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #303030;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+
+h3 {
+    position: absolute;
+    right: 0;
+}
+
+.imgNouveaute {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.pub {
+    padding: 75px;
+}
+
+.imgPub {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    border-top: 2px solid #000000;
+    padding-bottom: 15px;
+    background-color: #81685e;
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+
+}
+
+
+#Mentions,
+#CGV,
+#Contact,
+#Reseaux,
+a,
+p {
+    font-size: 15px;
+    color: white;
+    font-family: Euphemia;
+}
